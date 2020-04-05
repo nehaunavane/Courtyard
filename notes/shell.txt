@@ -1,0 +1,37 @@
+Basic commands:
+
+#system date:
+date --> displays date in IST
+date -u --> displays date in UTC
+
+#Logged in user info: 
+who --> tells how many users are logged into system
+who am i --> Gives info about logged in user
+
+#Count words,lines and characters: 
+wc <filename> --> counts no. of lines,words,characters and at end gives file name
+-l = lines; -w =words; -c =characters
+
+#copying file:
+cp <src file> <desti. file> 
+
+# moving/renaming a file:
+mv <src file> <desti. file> 
+{if desti. file exsits it overwrites it}
+
+#output redirection:
+who > users   
+(if users file not exists then linux will create it. If file exists and have some data, then that data will be lost)
+
+So to append data in file , use ">>"
+
+#input redirection:
+wc -l < users
+(Here, wc command accpets input from users file and count the no. of lines in it)
+
+
+#pipes: 
+A pipe is nothing but a temporary storage place where the output of one command is stored and then passed as the input for second command
+ls | wc -l 
+
+
