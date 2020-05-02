@@ -34,4 +34,23 @@ wc -l < users
 A pipe is nothing but a temporary storage place where the output of one command is stored and then passed as the input for second command
 ls | wc -l 
 
+#quotes: 
+"Double Quotes" - Anything enclose in double quotes removed meaning of that characters (except\ and $)
+'Single quotes' - Enclosed in single quotes remains unchanged (example: echo "today is ` date`")
+`Back quote` - To execute command.
 
+#shell_arithmetic
++, - , / , % , \* (for multiplication), ` expr 3 + 3`
+
+#read_input_from_user
+read -p "enter username" user
+read -sp "enter password" passwd(-s makes input silent)
+
+#We can also pass argument to script(max 9, $1 to $9)
+
+#to comment block of code : use (: ' at start and ' to close)
+
+#variable assignment
+do not give spaces around "=" 
+n=10 >>correct
+n = 10 >>incorrect
